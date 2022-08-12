@@ -1,0 +1,94 @@
+.player {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 72px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.player-wrapper {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 172px;
+  margin-left: 24px;
+}
+.player-btn-bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 72px;
+  height: 72px;
+}
+
+.player-bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 156px;
+  height: 72px;
+  margin-left: -14px;
+}
+
+.player-songname {
+  font-family: 'SF Pro Text';
+  margin: 0px 0px 4px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.player-time {
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 24px;
+  margin-bottom: 13px;
+}
+
+.player-progress {
+  display: flex;
+  cursor: pointer;
+  height: 6px;
+  width: 172px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1) 100%;
+  overflow: hidden;
+}
+
+.player-progress-line {
+  user-select: none;
+  touch-action: none;
+  height: 100%;
+  background: rgb(190, 177, 171) 8.06464%;
+}
